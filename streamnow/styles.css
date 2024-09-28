@@ -1,0 +1,53 @@
+:root {
+    --branco-principal: #F5F5DC; /* Bege claro */
+    --cinza-secundario: #A9A9A9; /* Cinza escuro */
+    --botao-dourado: #D4AF37; /* Ouro envelhecido */
+    --cor-de-fundo: #1E1B18; /* Preto/marrom escuro */
+    --fonte-principal: 'Pirata One', serif; /* Fonte com estilo pirata */
+    --botao-dourado-efeito: #B8860B; /* Dourado enferrujado */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container__botao {
+    background-color: var(--botao-dourado);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-de-fundo);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    color: var(--branco-principal);
+}
+
+.container__titulo, .descricao__titulo, .dispositivos__titulo {
+    font-family: 'Cinzel Decorative', serif; /* Estilo robusto e clássico */
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--botao-dourado);
+}
+
+.rodape__texto, .descricao__texto, .container__aviso {
+    color: var(--cinza-secundario);
+}
+
+/* Efeitos de hover para os botões */
+.container__botao:hover {
+    background-color: var(--botao-dourado-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.lista__link a:hover {
+    color: var(--botao-dourado);
+}
